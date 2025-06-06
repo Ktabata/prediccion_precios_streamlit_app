@@ -11,7 +11,20 @@ st.set_page_config(page_title="Predicción de Precio de Viviendas",
                    layout="wide")
 
 # --- Constantes y Configuración ---
-MODEL_PACKAGE_FILE = 'price_prediction_package_v1.pkl' # Nombre de tu archivo .pkl guardado
+#MODEL_PACKAGE_FILE = 'price_prediction_package_v1.pkl' # Nombre de tu archivo .pkl guardado
+
+import os
+# ... otras importaciones ...
+
+# --- Construir la ruta al archivo del modelo de forma robusta ---
+# Obtiene la ruta del directorio donde se encuentra este script (app_streamlit.py)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Nombre del archivo del modelo
+MODEL_FILE_NAME = 'price_prediction_package_v1.pkl'
+
+# Une las dos partes para crear la ruta completa y correcta
+MODEL_PACKAGE_FILE = os.path.join(BASE_DIR, MODEL_FILE_NAME)
 
 # --- Funciones de Carga de Artefactos (con caché de Streamlit) ---
 @st.cache_resource # Cache para objetos que no deben ser serializados por st.cache_data (modelos, encoders, scalers)

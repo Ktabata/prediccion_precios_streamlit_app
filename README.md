@@ -110,3 +110,66 @@ To process data, you can modify the app.py script to include your data processin
 This template was built as part of the [Data Science and Machine Learning Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning) by 4Geeks Academy by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Learn more about [4Geeks Academy BootCamp programs](https://4geeksacademy.com/us/programs) here.
 
 Other templates and resources like this can be found on the school's GitHub page.
+
+Proyecto de Predicción de Precios de Viviendas
+Este proyecto implementa un modelo de machine learning para predecir precios de viviendas y lo despliega como una aplicación web interactiva usando Streamlit. El ciclo de vida completo del proyecto, desde el tratamiento de datos brutos hasta el despliegue final, está documentado en este repositorio.
+
+🚀 Demo en Vivo
+La aplicación está desplegada en Streamlit Community Cloud y puedes probarla aquí:
+
+➡️ Probar la Aplicación de Predicción de Precios ⬅️
+
+(https://prediccionpreciosappapp-ktabata.streamlit.app/)
+
+📋 Descripción del Proyecto
+El objetivo de este proyecto fue construir un modelo de regresión robusto para estimar el valor de mercado de propiedades inmobiliarias basado en sus características. El proceso abarcó los siguientes pasos clave:
+
+Tratamiento de Datos: El proyecto comenzó con un desafío considerable: un conjunto de datos en formato PDF con inconsistencias, errores de formato y datos mal alineados. Se realizó un proceso exhaustivo de extracción, limpieza y preprocesamiento para transformar estos datos en un formato estructurado y utilizable.
+
+Análisis Exploratorio de Datos (EDA): Se analizaron las distribuciones de las variables, las correlaciones entre ellas y su relación con el precio de la vivienda para obtener insights iniciales.
+
+Ingeniería de Características: Se crearon nuevas características para mejorar el poder predictivo del modelo, tales como:
+
+age_at_sale: Antigüedad de la casa al momento de la venta.
+
+yrs_since_renovation: Años desde la última renovación.
+
+was_renovated: Indicador binario de si la propiedad fue renovada.
+
+La variable objetivo price fue transformada a price_log para manejar su distribución sesgada.
+
+Preprocesamiento y Modelado:
+
+Las variables categóricas como city fueron codificadas usando One-Hot Encoding.
+
+Las características numéricas fueron estandarizadas con StandardScaler.
+
+Se entrenaron y evaluaron múltiples modelos, incluyendo Regresión Lineal, Random Forest (con optimización de hiperparámetros) y XGBoost.
+
+Selección y Evaluación del Modelo: El modelo XGBoost demostró ser el más performante, obteniendo un R² de 0.68 y un Error Absoluto Medio (MAE) de ~$125,839 en el conjunto de prueba. El análisis de residuos confirmó que el modelo es robusto y no presenta sesgos obvios.
+
+Despliegue: El modelo final, junto con sus preprocesadores (escalador y codificador), fue empaquetado en un único archivo .pkl y desplegado como una aplicación web interactiva utilizando Streamlit y Streamlit Community Cloud.
+
+✨ Características Principales
+Interfaz Interactiva: Permite a los usuarios ingresar las características de una vivienda a través de widgets intuitivos.
+
+Predicción en Tiempo Real: Ofrece estimaciones de precio instantáneas basadas en las entradas del usuario.
+
+Modelo Robusto: Utiliza un modelo XGBoost, conocido por su alto rendimiento y precisión.
+
+Proceso Completo: Demuestra un ciclo de vida completo de un proyecto de Data Science, desde la limpieza de datos hasta el despliegue final.
+
+🛠️ Tecnologías Utilizadas
+Lenguaje: Python
+
+Librerías de Análisis y Modelado: Pandas, NumPy, Scikit-learn, XGBoost
+
+Aplicación Web: Streamlit
+
+Control de Versiones y Despliegue: Git, GitHub, GitHub Codespaces, Streamlit Community Cloud
+
+
+
+
+
+

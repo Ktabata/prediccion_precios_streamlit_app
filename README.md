@@ -114,14 +114,14 @@ Other templates and resources like this can be found on the school's GitHub page
 Proyecto de Predicción de Precios de Viviendas
 Este proyecto implementa un modelo de machine learning para predecir precios de viviendas y lo despliega como una aplicación web interactiva usando Streamlit. El ciclo de vida completo del proyecto, desde el tratamiento de datos brutos hasta el despliegue final, está documentado en este repositorio.
 
-🚀 Demo en Vivo
+## 🚀 Demo en Vivo
 La aplicación está desplegada en Streamlit Community Cloud y puedes probarla aquí:
 
-➡️ Probar la Aplicación de Predicción de Precios ⬅️
+## ➡️ Probar la Aplicación de Predicción de Precios ⬅️
 
 (https://prediccionpreciosappapp-ktabata.streamlit.app/)
 
-📋 Descripción del Proyecto
+## 📋 Descripción del Proyecto
 El objetivo de este proyecto fue construir un modelo de regresión robusto para estimar el valor de mercado de propiedades inmobiliarias basado en sus características. El proceso abarcó los siguientes pasos clave:
 
 Tratamiento de Datos: El proyecto comenzó con un desafío considerable: un conjunto de datos en formato PDF con inconsistencias, errores de formato y datos mal alineados. Se realizó un proceso exhaustivo de extracción, limpieza y preprocesamiento para transformar estos datos en un formato estructurado y utilizable.
@@ -150,7 +150,7 @@ Selección y Evaluación del Modelo: El modelo XGBoost demostró ser el más per
 
 Despliegue: El modelo final, junto con sus preprocesadores (escalador y codificador), fue empaquetado en un único archivo .pkl y desplegado como una aplicación web interactiva utilizando Streamlit y Streamlit Community Cloud.
 
-✨ Características Principales
+## ✨ Características Principales
 Interfaz Interactiva: Permite a los usuarios ingresar las características de una vivienda a través de widgets intuitivos.
 
 Predicción en Tiempo Real: Ofrece estimaciones de precio instantáneas basadas en las entradas del usuario.
@@ -159,7 +159,7 @@ Modelo Robusto: Utiliza un modelo XGBoost, conocido por su alto rendimiento y pr
 
 Proceso Completo: Demuestra un ciclo de vida completo de un proyecto de Data Science, desde la limpieza de datos hasta el despliegue final.
 
-🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 Lenguaje: Python
 
 Librerías de Análisis y Modelado: Pandas, NumPy, Scikit-learn, XGBoost
